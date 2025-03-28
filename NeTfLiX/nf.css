@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom,  
+    #000000 0%,  
+    #24151A 2%,  
+    #2A181D 10%,  
+    #2F1B20 18%,  
+    #341E23 26%,  
+    #2F1B20 34%,  
+    #29161C 40%,  
+    #221218 45%,  
+    #1A0D12 50%,  
+    #12080C 55%,  
+    #090405 60%,  
+    #000000 70%  
+);
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 45px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo > img {
+    cursor: pointer;
+    height: 40px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+#language_selector {
+    padding: 6px 23px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+
+#language_selector option {
+    color: black;
+}
+
+.signin {
+    cursor: pointer;
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}   
+
+.signin:hover {
+    background-color: #B9B7B8;
+    transition: 0.2s ease-out;
+}
+
+.main-container {
+    background-image: url(assets/images/nf_bg_img.jpg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 550px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackbox {
+    position: absolute;
+    background: linear-gradient(to bottom,  
+    #000000 0%,  
+    #000000 15%,  
+    #000000f0 30%,  
+    #000000e0 45%,  
+    #000000 50%,  
+    #000000e0 55%,  
+    #000000f0 70%,  
+    #000000 85%,  
+    #000000 100%  
+);
+    border-radius:20px;
+    opacity: 0.7;
+    top: 0;
+    height: 65vh;
+    min-height: 550px;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    width: 45vw;
+    padding: 150px 0px 80px 0px ;
+}
+
+.content h1 {
+    font-family: 'open-sans', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    padding:  0px 0px 15px 0px;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-btn input {
+    padding: 19px 120px 19px 18px;
+    border-radius: 35px;
+    background-color: gray;
+    opacity: 0.7;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+.email-btn input::placeholder {
+    color: white;
+}
+
+.su-btn {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    padding: 13px 35px 13px 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    display: inline-flex;
+}
+
+.sign-up img {
+    padding: 0px 0px 0px 12px;
+}
+
+.sign-up:hover {
+    background-color: #C11119;
+}
+
+.trending {
+    padding: 30px 80px 20px 80px;
+}
+
+.trending h2 {
+    font-size: xx-large;
+    color: #DCCCCD;
+    padding: 0px 0px 20px 0px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.images img {
+    cursor: pointer;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.images span {
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    left: -15px;
+    font-size: 60px;
+    font-family: 'Anton', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;  
+    -webkit-text-stroke: 1px white;
+}
+
+.images div {
+    transition: transform 0.2s ease-in;
+    position: relative;
+    display: flex;
+}
+
+.images div:hover {
+    transform: scale(1.05);
+}
+
+.plans {
+    padding: 20px 80px;
+}
+
+.plans-container {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+
+.plans > h2 {
+    font-size: 24px;
+    color: #DCCCCD;
+}
+
+.plan {
+    color: #DCCCCD;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 10px 60px 15px;
+    margin: 13px 15px 0px 0px;
+    gap: 12px;
+    border-radius: 15px;
+}
+
+.plan1 {
+    background: linear-gradient(to top left, black, #0F355E);
+    transition: 0.3s ease-in;
+}
+.plan2 {
+    background: linear-gradient(to top left, black, #0F355E, #4A1854);
+    transition: 0.3s ease-in;
+}
+.plan3 { 
+    background: linear-gradient(to top left, black, #4A1854, #5E1A33);
+    transition: 0.3s ease-in;
+}
+.plan4 {
+    background: linear-gradient(to top left, black, #0F355E, #4A1854, #5E1A33);
+    transition: 0.3s ease-in;
+}
+
+.plan1:hover {
+    background: linear-gradient(to top left, black, #1D529D);
+    transform: scale(1.02);
+}
+.plan2:hover {
+    background: linear-gradient(to top left, black, #1D529D, #792A95);
+    transform: scale(1.02);
+    
+}
+.plan3:hover { 
+    background: linear-gradient(to top left, black, #792A95, #922556);
+    transform: scale(1.02);
+    
+}
+.plan4:hover {
+    background: linear-gradient(to top left, black, #1D529D, #792A95, #922556);
+    transform: scale(1.02);
+    
+}
+
+.plan img {
+    height: 15px;
+}
+
+.plan2 .mp {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: #4D5985;
+    color: white;
+    font-size: 14px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 15px;
+    padding: 6px;
+}
+
+.plan .price {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+}
+
+.plan > h2 {
+    color: white;
+}
+
+.plan p {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.reasons {
+    padding: 20px 80px;
+    margin: 7px 0px 0px 0px;
+}
+
+.reasons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.reasons h1 {
+    color: white;
+    padding: 0px 0px 13px 0px;
+    
+}
+
+.rc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #272727;
+    color: white; 
+    padding: 24px 20px 70px 20px; 
+    margin: 0px 11px 0px 0px;
+    gap: 15px;
+    border-radius: 16px;
+}
+
+.rc p {
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+.rc h2 {
+    font-size: 18px;
+}
+
+.rc div img {
+    position: absolute;
+    bottom: 8%;
+    right: 6%;
+}
+
+.faq {
+   padding: 25px 80px;
+}
+
+.faq h1 {
+    color: white;
+    
+}
+
+.ques {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    color: white;
+}
+
+.q {
+    cursor: pointer;
+    position: relative;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    padding: 27px 22px ;
+    margin: 10px 0px 0px 0px;
+    border-radius: 17px;
+}
+
+.q img {
+    float: right;
+    height: 43px;
+    padding: 10px;
+}
+
+.q div {
+    position: absolute;
+    right: 1%;
+    
+}
+
+.q:hover {
+    background-color: #3F3F3F;
+    transition: 0.5s ease-out;
+}
+
+.finish-su-container {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.finish-su {
+    color: white;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finish-su h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 0px 16px 0px;
+}
+
+
+.contact {
+    padding: 60px 80px 40px 80px;
+    color: #B4B4B4;
+}
+
+.contact h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contact h3 a {
+    color: #B4B4B4;
+}
+
+.links-container {
+    padding: 10px 80px;
+}   
+
+.links {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.links a {
+    font-size: 14px;
+    color: #B4B4B4;
+}
+
+.ls {
+    padding: 55px 80px 30px 80px;
+}
+
+.ni {
+    padding: 10px 80px 80px 80px;
+}
+
+.ni p {
+    font-size: 14px;
+    color: #B4B4B4;
+}
+
+/* media queries starts from here */
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        height: 25px;
+    }
+    
+    #language_selector {
+        font-size: 14px;
+    }
+
+    .signin {
+        font-size: 14px;
+    }
+
+    .main {
+        padding: 13px 22px;
+    }
+    
+    .content {
+        width: 80vw;
+        text-align: center;
+        padding: 170px 0px 80px 0px;       
+    }
+    
+    .content h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .content h2 {
+        font-size: 16px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+
+    .content-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .email-btn input {
+        padding: 15px 145px 15px 15px;
+        width: 85vw;
+    }
+    
+    .sign-up {
+        padding: 10px 0px 10px 0px;      
+        font-size: 18px;
+        justify-content: center;
+        width: 85vw;
+    }
+
+    .sign-up img {
+        padding: 0px 0px 0px 5px;
+    }
+
+    .main-container {
+        height: 48vh;
+        min-height: 450px;
+    }
+    
+    .blackbox {
+        height: 48vh;
+        min-height: 450px;
+    }
+
+    .trending {
+        padding: 30px 0px 20px 0px;
+    }
+
+    .trending h2 {
+        font-size: 21px;
+    }
+
+    .trending .images img {
+        height: 200px;
+    }
+
+    .trending span {
+        font-size: 40px;
+        left: -8px;
+    }
+
+    .plans {
+        padding: 20px 0px;
+    }
+
+    .plans h2 {
+        font-size: 18px;
+    }
+
+    .plans-container {
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    
+    .plan {
+        padding: 30px 10px 60px 18px;
+        margin: 13px 0px 0px 0px;
+    }
+
+    .reasons {
+        padding: 20px 0px;       
+    }
+
+    .reasons h1 {
+        font-size: 20px;
+    }
+
+    .reasons-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rc {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .faq {
+        padding: 25px 0px;
+    }
+
+    .faq h1 {
+        font-size: 20px;
+    }
+
+    .q {
+        padding: 22px 22px ;
+        margin: 10px 0px 0px 0px;    
+    }
+
+    .q h3 {
+        font-size: 14px;
+    }
+
+    .finish-su-container {
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .contact {
+        padding: 60px 0px 40px 0px;
+    }
+
+    .links-container {
+        padding: 10px 0px;
+    }
+ 
+    .links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ls {
+        padding: 55px 0px 30px 0px;       
+    }
+
+    .ni {
+        padding: 10px 0px 80px 0px;
+    }
+}
